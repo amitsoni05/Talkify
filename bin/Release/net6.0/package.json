@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@microsoft/signalr": "^8.0.7",
+    "emoji-button": "^2.2.2"
+  }
+}

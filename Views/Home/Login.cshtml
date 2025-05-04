@@ -1,0 +1,135 @@
+﻿@model LoginModel
+<style>
+    .loading-screen {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        z-index: 9999999;
+        top: 0;
+        left: 0;
+    }
+
+    .loader-icon {
+        border: 6px solid #f3f3f3; /* Light grey */
+        border-top: 6px solid #35aa47; /* Green */
+        border-radius: 50% !important;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+</style>
+
+
+
+<div class="main-wrapper">
+    @*     <div class="loading-screen" style="display: none;"><div class="loader-icon"></div></div> *@
+
+    <div class="auth-wrapper d-flex no-block justify-content-center align-items-center">
+        <div class="auth-box">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <div id="loginform">
+                        <div class="logo mt-2" style="text-align:center">
+                            <span class="db"><img src="~/Image/talkifyicon.jpg" alt="logo" width="350px" height="100px" /></span>
+                        </div>
+                        <div>
+                            <h4 style="text-align:center">LogIn in Talkify</h4>
+                        </div>
+                        <!-- Form -->
+                        <div class="row">
+
+                            <div class="col-12">
+                                @*   <h4 style="text-align:center">Log In</h4> *@
+                                <form id="LoginForm" class="validation-wizard form-horizontal form-material needs-validation">
+                                    <span asp-validation-for="UserPassword" class="text-danger"></span><br />
+                                    <span asp-validation-for="UserName" class="text-danger"></span>
+                                    @if (TempData["Message"] != null)
+                                    {
+                                        <div class="alert alert-danger" role="alert">
+                                            @TempData["Message"]
+                                        </div>
+                                    }
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control form-control-lg" asp-for=UserName placeholder="Username" aria-label="Email" aria-describedby="basic-addon1" autocomplete="off"><br />
+
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend password">
+                                            <span class="input-group-text" id="basic-addon2"><i id="toggleIcon" class="fa fa-eye"></i></span>
+                                        </div>
+                                        <input type="Password" id="txtPassword" class="form-control form-control-lg" asp-for=UserPassword placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" autocomplete="off"><br />
+
+                                    </div>
+
+
+                                    <div class="form-group text-center">
+                                        <div class="col-xs-12 p-b-20">
+                                            <a class="btn btn-block btn-lg btn-info text-white" onclick="LoginPost()">Log In</a>
+
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5>Username-user1 , Password-Admin123</h5>
+                                        <h5>Username-user2 , Password-Admin123</h5>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+<script>
+    function LoginPost() {
+        debugger;
+        $(".loading-screen").show();
+        var formData = $("#LoginForm").serialize();
+        $.ajax({
+            type: "post",
+            url: '@Url.Action("Login", "Home")',
+            data: formData,
+            success: function (result) {
+                debugger;
+                if (result.isSuccess) {
+                    window.location.href = '@Url.Action("Index", "Home")';
+                } else {
+
+                    window.location.href = '@Url.Action("Login", "Home")';
+                }
+            },
+            dataType: "json",
+            traditional: true
+        });
+
+    }
+    const toggleIcon = document.getElementById('toggleIcon');
+    const passwordField = document.getElementById('txtPassword');
+
+    toggleIcon.addEventListener('click', function () {
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            toggleIcon.className = 'fa fa-eye-slash';
+        } else {
+            passwordField.type = 'password';
+            toggleIcon.className = 'fa fa-eye';
+        }
+    });
+
+</script>
+
+

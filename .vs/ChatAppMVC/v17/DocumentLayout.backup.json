@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|e:\\amit_soni\\projectamit\\chapapp\\chatappmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|e:\\amit_soni\\projectamit\\chapapp\\chatappmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|e:\\amit_soni\\projectamit\\chapapp\\chatappmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|e:\\amit_soni\\projectamit\\chapapp\\chatappmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|e:\\amit_soni\\projectamit\\chapapp\\chatappmvc\\models\\usermasterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|solutionrelative:models\\usermasterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|e:\\amit_soni\\projectamit\\chapapp\\chatappmvc\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|solutionrelative:views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|e:\\amit_soni\\projectamit\\chapapp\\chatappmvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|solutionrelative:wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|e:\\amit_soni\\projectamit\\chapapp\\chatappmvc\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|solutionrelative:hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\node_modules\\@microsoft\\signalr\\dist\\esm\\HubConnectionBuilder.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:node_modules\\@microsoft\\signalr\\dist\\esm\\HubConnectionBuilder.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SPC5\\AppData\\Local\\Temp\\.vsdbgsrc\\f4afc3a88e25fb070f72b4a8058cd7e207766a7e6982c00e0931b159fe6558b6\\ControllerActionInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|e:\\amit_soni\\projectamit\\chapapp\\chatappmvc\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B85DE57-861F-48BB-A545-BA7FCAEB84C0}|ChatAppMVC.csproj|solutionrelative:models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:219497159:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowBEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T10:50:25.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAowHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T11:01:44.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Login.cshtml",
+              "ToolTip": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAYwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T10:53:25.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAwwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T10:53:53.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserMasterViewModel.cs",
+              "DocumentMoniker": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Models\\UserMasterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserMasterViewModel.cs",
+              "ToolTip": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Models\\UserMasterViewModel.cs",
+              "RelativeToolTip": "Models\\UserMasterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T04:40:43.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T10:54:10.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "bootstrap.bundle.js",
+              "DocumentMoniker": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+              "ToolTip": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+              "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+              "ViewState": "AgIAAC8CAAAAAAAAAAAAAD0CAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-03T06:18:35.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\ChatHub.cs",
+              "ToolTip": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "Hubs\\ChatHub.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T10:44:33.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HubConnectionBuilder.d.ts",
+              "DocumentMoniker": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\node_modules\\@microsoft\\signalr\\dist\\esm\\HubConnectionBuilder.d.ts",
+              "RelativeDocumentMoniker": "node_modules\\@microsoft\\signalr\\dist\\esm\\HubConnectionBuilder.d.ts",
+              "ToolTip": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\node_modules\\@microsoft\\signalr\\dist\\esm\\HubConnectionBuilder.d.ts",
+              "RelativeToolTip": "node_modules\\@microsoft\\signalr\\dist\\esm\\HubConnectionBuilder.d.ts",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAawGIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-26T08:02:13.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ControllerActionInvoker.cs",
+              "DocumentMoniker": "C:\\Users\\SPC5\\AppData\\Local\\Temp\\.vsdbgsrc\\f4afc3a88e25fb070f72b4a8058cd7e207766a7e6982c00e0931b159fe6558b6\\ControllerActionInvoker.cs",
+              "ToolTip": "C:\\Users\\SPC5\\AppData\\Local\\Temp\\.vsdbgsrc\\f4afc3a88e25fb070f72b4a8058cd7e207766a7e6982c00e0931b159fe6558b6\\ControllerActionInvoker.cs [Read Only]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T11:08:12.218Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginModel.cs",
+              "ToolTip": "E:\\Amit_Soni\\ProjectAmit\\ChapApp\\ChatAppMVC\\Models\\LoginModel.cs",
+              "RelativeToolTip": "Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T10:52:18.898Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

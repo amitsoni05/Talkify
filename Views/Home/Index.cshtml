@@ -1,0 +1,226 @@
+﻿<style>
+    #chatContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        max-height: 600px; /* Limit the height of the chat container */
+        overflow-y: auto; /* Add vertical scrollbar when content exceeds the height */
+        padding: 10px;
+        background-color: #f9f9f9; /* Optional: add a background color for better visibility */
+        border-radius: 8px;
+    }
+
+    .message {
+        display: flex;
+        margin: 5px 0;
+        position: relative;
+    }
+
+    .sent {
+        justify-content: flex-end;
+    }
+
+    .received {
+        justify-content: flex-start;
+    }
+
+    .message p {
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 60%;
+        word-wrap: break-word;
+        position: relative;
+        margin: 0;
+    }
+
+    .timestamp {
+        display: block; /* Forces the timestamp to appear below the message */
+        text-align: right;
+        font-size: 0.8em;
+        color: gray;
+        margin-top: 5px; /* Space between message and timestamp */
+    }
+    .sent p {
+        background-color: #c3e1ff; /* Sent message styling */
+    }
+
+    .received p {
+        background-color: #a9b5dd; /* Received message styling */
+    }
+
+    /* Light theme */
+    body.light-theme {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    #chatContainer.light-theme {
+        background-color: #f9f9f9; /* Light theme background */
+        border: 2px solid #ccc;
+    }
+
+    /* Dark theme */
+    body.dark-theme {
+        background-color: #181818;
+        color: #ffffff;
+    }
+
+    #chatContainer.dark-theme {
+        background-color: #2c2c2c; /* Dark theme background */
+        border: 2px solid #444;
+    }
+
+    
+</style>
+
+<div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-8">
+        <div style="color:cadetblue;">
+            <h1 >Hello @Model.UserName</h1>
+            <button id="themeToggle" class="btn btn-secondary">Dark Theme</button>
+        </div><br />
+        <div style="background-color:#f5f4f4; border:2px solid black;border-radius:8px;">
+            <div><div id="typingIndicator" style="color: gray; font-style: italic; margin-top: 5px;"></div></div>
+            <div id="chatContainer">
+                <!-- Chat messages will be appended here -->
+            </div>
+
+            <div class="row mb-6">
+                <div class="col-md-3">
+                    <select class="form-control" id="recipientId">
+                        @if (Model.UserId == 1)
+                        {
+                            <option value="2">User 2</option>
+                        }
+                        else if (Model.UserId == 2)
+                        {
+                            <option value="1">User 1</option>
+                        }
+                       
+                    </select>
+                </div>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="messageInput" placeholder="Type your message">
+                </div>
+                <div class="col-md-2 text-end">
+                    <button id="sendButton" type="button" class="btn btn-primary w-100">Send</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="col-2">
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+<script src="~/js/signalr.min.js" asp-append-version="true"></script>
+<script>
+    // Initialize SignalR connection
+    const connection = new signalR.HubConnectionBuilder()
+        .withUrl("/chatHub")
+        .build();
+
+    // Function to format time without seconds
+    function formatTime() {
+        const date = new Date();
+        return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+
+    connection.on("ReceiveMessage", (userId, message) => {
+        const $chatContainer = $("#chatContainer");
+        const $messageElement = $("<div>").addClass("message received");
+        const $messageText = $("<p>");
+        const timestamp = formatTime();
+
+        $messageText.html(`User ${userId}: ${message}<span class="timestamp">${timestamp}</span>`);
+        $messageElement.append($messageText);
+
+        $chatContainer.append($messageElement);
+        $chatContainer.scrollTop($chatContainer[0].scrollHeight); // Auto-scroll to bottom
+    });
+
+    // Event handler for user status changes
+   
+
+    connection.start()
+        .then(() => console.log("Connected to SignalR"))
+        .catch(err => console.error(err.toString()));
+
+    $("#sendButton").on("click", function () {
+        const recipientId = $("#recipientId").val();
+        const message = $("#messageInput").val();
+
+        if (message.trim() === "") {
+            alert("Please enter a message.");
+            return;
+        }
+
+        const $chatContainer = $("#chatContainer");
+        const messageElement = $("<div>").addClass("message sent");
+        const messageText = $("<p>");
+        const timestamp = formatTime();
+
+        messageText.html(`${message}<span class="timestamp">${timestamp}</span>`);
+        messageElement.append(messageText);
+
+        $chatContainer.append(messageElement);
+        $chatContainer.scrollTop($chatContainer[0].scrollHeight); // Auto-scroll to bottom
+
+        connection.invoke("SendMessageToUser", parseInt(recipientId), message)
+            .catch(err => console.error(err.toString()));
+
+        $("#messageInput").val(""); // Clear message input
+    });
+
+    const $messageInput = $("#messageInput");
+    const $recipientId = $("#recipientId");
+    const $typingIndicator = $("#typingIndicator");
+
+    $messageInput.on("input", function () {
+        const recipientId = $recipientId.val();
+        if (recipientId) {
+            connection.invoke("NotifyTyping", parseInt(recipientId))
+                .catch(err => console.error(err.toString()));
+        }
+    });
+
+    connection.on("Typing", function (userName) {
+        $typingIndicator.text(`${userName} is typing...`);
+
+        // Clear the message after 3 seconds
+        setTimeout(function () {
+            $typingIndicator.text("");
+        }, 3000);
+    });
+    // Check for saved theme preference
+   $(document).ready(function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        $('body').addClass(savedTheme);
+        $('#chatContainer').addClass(savedTheme);
+    }
+});
+
+
+    // Toggle theme and save preference
+    $('#themeToggle').on('click', function () {
+        if ($('body').hasClass('light-theme')) {
+            $('body').removeClass('light-theme').addClass('dark-theme');
+            $('#chatContainer').removeClass('light-theme').addClass('dark-theme');
+            $('#themeToggle').text('Dark Theme'); // Change button text
+            localStorage.setItem('theme', 'dark-theme');
+        } else {
+            $('body').removeClass('dark-theme').addClass('light-theme');
+            $('#chatContainer').removeClass('dark-theme').addClass('light-theme');
+            $('#themeToggle').text('Light Theme'); // Change button text
+            localStorage.setItem('theme', 'light-theme');
+        }
+    });
+
+
+</script>

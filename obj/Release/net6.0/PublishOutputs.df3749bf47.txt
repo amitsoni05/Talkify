@@ -1,0 +1,13 @@
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\ChatAppMVC.exe
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\appsettings.json
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\package-lock.json
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\package.json
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\ChatAppMVC.dll
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\ChatAppMVC.runtimeconfig.json
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\ChatAppMVC.pdb
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\System.Net.WebSockets.WebSocketProtocol.dll
+E:\Amit_Soni\ProjectAmit\ChapApp\ChatAppMVC\obj\Release\net6.0\PubTmp\Out\ChatAppMVC.deps.json
